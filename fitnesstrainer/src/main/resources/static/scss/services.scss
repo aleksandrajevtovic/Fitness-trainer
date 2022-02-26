@@ -1,0 +1,136 @@
+@keyframes left-to-right {
+	0%,100% {
+		left: 0;
+	}
+	50% {
+		left: 100px;
+	}
+}
+.service-area {
+	background: #323f4b;
+	padding: 130px 0;
+	.section-title {
+		margin-bottom: 50px;
+		margin-top: 70px;
+	}
+}
+.section-title {
+	h5 {
+		color: #f5f7fa;
+		font-size: 18px;
+		font-weight: 400;
+		margin-bottom: 16px;
+		text-transform: uppercase;
+		position: relative;
+		&::before {
+			content: '. . .';
+			color: #36AD88;
+			position: absolute;
+			bottom: -25px;
+			font-size: 50px;
+			animation: left-to-right 10s infinite;
+		}
+	}
+	.title {
+		font-size: 45px;
+		line-height: 1.25;
+		font-weight: 500;
+		color: #f5f7fa;
+		text-transform: uppercase;
+		margin-top: 40px;
+	}
+}
+.icon-box-item {
+	background-color: #3e4c59;
+	border-radius: 30px;
+	margin-bottom: 30px;
+	padding: 49px 35px 39px;
+	position: relative;
+	position: relative;
+	transition: 0.3s;
+	.icon-box {
+		margin-bottom: 26px;
+		position: relative;
+		.icon-img {
+			width: 50px;
+		}
+	}
+	.content {
+		h4 {
+			font-size: 24px;
+			margin-bottom: 25px;
+			color: #f5f7fa;
+			font-weight: 500;
+		}
+		p {
+			margin-bottom: 40px;
+			transition: 0.3s;
+			color: #cbd2d9;
+			font-weight: 400;
+			line-height: 24px;
+			font-size: 16px;
+		}
+	}
+	&:hover {
+		background-color: #1F2933;
+	}
+}
+.col-item-center {
+	padding-top: 120px;
+}
+@media (max-width: 1200px) {
+	.icon-box-item {
+		padding: 48px 30px 2px;
+		.content {
+			h4 {
+				margin-bottom: 18px;
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+	.service-area {
+		.section-title {
+			margin-top: 30px;
+		}
+		padding: 80px 0;
+	}
+	.section-title {
+		.title {
+			margin-bottom: 30px;
+			font-size: 40px;
+		}
+		margin-bottom: 84px;
+		margin-top: 0;
+	}
+	.col-item-center {
+		padding-top: 0;
+	}
+	.icon-box-item {
+		.icon-box {
+			.icon-img {
+				width: 40px;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.service-area {
+		padding: 60px 0;
+	}
+	.section-title {
+		h5 {
+			font-size: 16px;
+		}
+		.title {
+			font-size: 32px;
+		}
+	}
+	.icon-box-item {
+		.content {
+			h4 {
+				font-size: 22px;
+			}
+		}
+	}
+}

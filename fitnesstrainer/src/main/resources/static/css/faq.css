@@ -1,0 +1,213 @@
+/* accordion */
+#faq {
+  overflow: hidden;
+  background-color: #1f2933;
+}
+
+.banner {
+  margin: 0 95px;
+  position: relative;
+  min-height: 800px;
+  background-image: url("https://i.imgur.com/qUCfd5W.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 60px;
+  overflow: hidden;
+  padding: 250px 200px 300px 200px;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#142032), color-stop(#162338), color-stop(#17273e), color-stop(#192a44), color-stop(#1b2e4a), color-stop(#1f324f), color-stop(#223554), color-stop(#263959), color-stop(#2c3d5e), color-stop(#324263), color-stop(#374669), to(#3d4b6e));
+  background-image: linear-gradient(to bottom, #142032, #162338, #17273e, #192a44, #1b2e4a, #1f324f, #223554, #263959, #2c3d5e, #324263, #374669, #3d4b6e);
+  opacity: .9;
+}
+
+.banner-content {
+  margin-bottom: 0;
+}
+
+.banner-content > * {
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+  position: relative;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.section-title h5 {
+  color: #f5f7fa;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: #f5f7fa;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.section-title h5::before {
+  content: '. . .';
+  color: #36AD88;
+  position: absolute;
+  font-size: 50px;
+  top: -10px;
+  content: '. . .';
+  color: #36AD88;
+  position: absolute;
+  font-size: 50px;
+  top: -10px;
+}
+
+.section-title .title {
+  font-size: 45px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: #f5f7fa;
+  text-transform: uppercase;
+  margin-top: 40px;
+  z-index: 1;
+  font-size: 45px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: #f5f7fa;
+  text-transform: uppercase;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.hr:not([size]) {
+  height: unset !important;
+}
+
+.accordion-custom .accordion-item {
+  background: transparent;
+  border: none;
+  padding-top: 1rem;
+}
+
+.accordion-custom .accordion-item:first-of-type {
+  border-radius: 0;
+}
+
+.accordion-custom .accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-custom .accordion-button {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #F5F7FA;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0;
+}
+
+.accordion-custom .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #F5F7FA;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.accordion-custom .accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+.accordion-custom .accordion-button::after {
+  background-image: none;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.accordion-custom .accordion-header {
+  margin-bottom: 0.5rem;
+}
+
+.accordion-custom .accordion-body {
+  color: #CBD2D9;
+  font-weight: 400;
+  padding: 0 0 1.2rem 0;
+  font-size: 16px;
+}
+
+.separator {
+  border: 4px dotted;
+  border-bottom: none;
+  opacity: 1;
+  background: transparent;
+}
+
+.separator.accent {
+  border-color: #36AD88;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .banner {
+    padding: 150px 100px 200px 100px;
+    min-height: 600px;
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .banner {
+    margin: 0 30px;
+    padding: 150px 60px;
+    min-height: 600px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner {
+    min-height: 100%;
+  }
+  .section-title .title {
+    margin-bottom: 30px;
+    font-size: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner {
+    padding: 80px 30px;
+  }
+  .section-title h5 {
+    font-size: 16px;
+  }
+  .section-title .title {
+    font-size: 32px !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .banner {
+    margin: 0 15px;
+  }
+}

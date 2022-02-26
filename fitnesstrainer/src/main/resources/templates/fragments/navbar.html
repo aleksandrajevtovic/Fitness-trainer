@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html
+  lang="srb"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+>
+  <head> </head>
+
+  <body>
+    <th:block th:fragment="navbar"> 
+      <header class="header">
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+          <div class="container-fluid">
+      
+            <a href="#" class="navbar-brand"><img src="https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png" class="img-fluid logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+      <!--         <span class="navbar-toggler-icon"></span> -->
+      <!-- <span class="iconify" data-icon="ci:menu-alt-03" style="color: #f5f7fa;" data-width="30" data-height="30"></span> -->
+      <img src="/img/hamburger.svg" alt="Menu Icon" class="navbar-svg hamburger">
+            </button>
+            <div class="offcanvas offcanvas-start" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel"><a href="#" class="navbar-brand"><img src="https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png" class="img-fluid logo" alt="logo"></a></h5>
+      <!--           <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                <!-- <span class="fas fa-times close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></span> -->
+                <img src="/img/close.svg" alt="Close Icon" class="navbar-svg close"  data-bs-dismiss="offcanvas" aria-label="Close">
+
+              </div>
+              <div class="offcanvas-body">
+                <div class="navbar-nav nav justify-content-end flex-grow-1 pe-3">
+                  <a class="nav-item nav-link active " aria-current="page" href="#home"> <span class="underline-hover">Home</span></a>
+                  <a class="nav-item nav-link" href="#about"> <span class="underline-hover">About</span></a>
+                  <a class="nav-item nav-link" href="#services"> <span class="underline-hover">Services</span></a>
+                  <a class="nav-item nav-link" href="#faq"> <span class="underline-hover">FAQ</span></a>
+                  <a class="nav-item nav-link" href="#contact"> <span class="underline-hover">Contact</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </th:block>
+  </body>
+</html>

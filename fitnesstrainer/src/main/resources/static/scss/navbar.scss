@@ -1,0 +1,125 @@
+
+
+.navbar.bg-dark {
+  background-color: #1f2933 !important;
+}
+.navbar-brand {
+  img {
+    width: 70px;
+  }
+}
+.navbar-nav {
+  background-color: #1f2933 !important;
+}
+.header {
+  .offcanvas-body,
+  .offcanvas-header {
+    background-color: #1f2933;
+  }
+  .offcanvas-header,
+  .offcanvas-body {
+    padding: 2rem 2rem;
+  }
+  .nav-link {
+    color: #f5f7fa;
+    font-weight: 500;
+    transition: 0.3s all;
+    &:hover,
+    &:focus {
+      color: #f5f7fa;
+    }
+  }
+  .offcanvas-start {
+    width: 300px;
+    border-right: none !important;
+  }
+  .offcanvas-backdrop.show {
+    opacity: 0.8;
+  }
+}
+a {
+  text-decoration: none !important;
+}
+button:focus:not(:focus-visible) {
+  box-shadow: none !important;
+}
+.navbar-svg {
+cursor: pointer;
+transition: 0.15s ease-in-out;
+
+&.hamburger {
+    border-radius: 50%;
+    padding: 7px;
+    width: 52px;
+    height: 52px;
+	&:hover {
+		background: #1c3049;
+	}
+}
+&.close {
+	background: #CBD2D9;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+	&:hover {
+		background: #fff;
+	}
+}
+}
+
+.underline-hover {
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(120deg, #36ad88 0%, #36ad88 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.5em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    // background-size: 100% 88%;
+  }
+}
+
+.active {
+  background-image: linear-gradient(120deg, #36ad88 0%, #36ad88 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em;
+  background-position: 0 65%;
+}
+@media (max-width: 991px) {
+  .header {
+    .navbar-nav {
+      .nav-link {
+        &:first-child {
+          padding: 0 0 1.2rem;
+        }
+        padding: 1.2rem 0;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .active {
+    margin: 0 auto;
+    &:first-child {
+      background-position: 0 50%;
+    }
+  }
+}
+header {
+  span.close-btn {
+    color: #1f2933;
+    background: #cbd2d9;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+    &:hover {
+      background: #fff;
+    }
+  }
+}

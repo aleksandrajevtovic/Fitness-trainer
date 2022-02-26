@@ -1,0 +1,259 @@
+/* icons */
+@keyframes rotate3d {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+/* @keyframes movingleftright1 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    40% {
+        transform: translateX(50px) translateY(-200px);
+    }
+
+    75% {
+        transform: translateX(800px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+} */
+@keyframes animationFramesOne {
+	0% {
+		transform: translate(0px,0px) rotate(0deg);
+	}
+	20% {
+		transform: translate(73px,-1px) rotate(36deg);
+	}
+	40% {
+		transform: translate(141px,72px) rotate(72deg);
+	}
+	60% {
+		transform: translate(83px,122px) rotate(108deg);
+	}
+	80% {
+		transform: translate(-40px,72px) rotate(144deg);
+	}
+	100% {
+		transform: translate(0px,0px) rotate(0deg);
+	}
+}
+@keyframes movingleftright2 {
+	0% {
+		transform: translateX(0) translateY(0);
+	}
+	40% {
+		transform: translateX(-50px) translateY(200px);
+	}
+	75% {
+		transform: translateX(-500px);
+	}
+	100% {
+		transform: translateY(0) translateX(0);
+	}
+}
+@keyframes semi-rotate-anim {
+	50% {
+		animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transform: translateY(25px) rotate(-53deg);
+	}
+}
+@keyframes swing-anim {
+	65% {
+		animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transform: translateY(-48px) rotate(-75deg);
+	}
+}
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.help-area {
+	background: #1f2933;
+	padding: 130px 0;
+	position: relative;
+	z-index: 2;
+}
+.section-title {
+	margin-bottom: 40px;
+	h5 {
+		color: #f5f7fa;
+		font-size: 18px;
+		font-weight: 400;
+		margin-bottom: 16px;
+		text-transform: uppercase;
+		&::before {
+			content: ". . .";
+			color: #36ad88;
+			position: absolute;
+			font-size: 50px;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.title {
+		font-size: 45px;
+		line-height: 1.25;
+		font-weight: 500;
+		color: #f5f7fa;
+		text-transform: uppercase;
+		margin-top: 40px;
+		z-index: 1;
+	}
+}
+.section-title.center {
+	text-align: center;
+}
+.section-text.center {
+	text-align: center;
+}
+.section-text {
+	p {
+		color: #CBD2D9;
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 1.5rem;
+		padding: 0 10rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		a {
+			color: #36ad88;
+		}
+	}
+}
+a {
+	text-decoration: none !important;
+}
+.center-btn {
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+	.btn-accent {
+		background: #36ad88;
+		padding: 18px 50px;
+		border-radius: 30px;
+		color: #fff;
+	}
+}
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+.shape-group {
+	.shape {
+		position: absolute;
+		z-index: -1;
+	}
+	.shape.shape-1 {
+		top: 24%;
+		left: 20%;
+		animation: rotate3d 4s linear infinite;
+		img {
+			opacity: 0.5;
+			width: 42px;
+			height: 42px;
+			transform: rotate(264deg);
+		}
+	}
+	.shape.shape-2 {
+		bottom: 455px;
+		left: 75%;
+		animation: animationFramesOne 15s infinite linear;
+		img {
+			width: 75px;
+			opacity: 0.5;
+			width: 35px;
+			height: 35px;
+		}
+	}
+	.shape.shape-3 {
+		bottom: 165px;
+		left: 5%;
+		animation: semi-rotate-anim 9.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+		img {
+			width: 42px;
+			height: 42px;
+			transform: rotate( 300deg);
+			opacity: .3;
+		}
+	}
+	.shape.shape-4 {
+		bottom: 251px;
+		left: 70%;
+		animation: swing-anim 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+		img {
+			width: 35px;
+			height: 35px;
+			opacity: .3;
+		}
+	}
+	.shape.shape-5 {
+		bottom: 30%;
+		right: 128px;
+		z-index: -2;
+		text-align: right;
+		animation: movingleftright2 infinite 30000ms;
+		img {
+			opacity: .3;
+			width: 35px;
+			height: 35px;
+		}
+	}
+	.shape.shape-6 {
+		bottom: 60%;
+		right: 354px;
+		transform: rotate(25deg);
+		animation: rotating 5s linear infinite;
+		img {
+			opacity: .3;
+			width: 15px;
+		}
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+@media only screen and (max-width: 991px) {
+	.section-title {
+		.title {
+			margin-bottom: 30px;
+			font-size: 40px;
+		}
+	}
+	.section-text {
+		p {
+			padding: 0;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.section-title {
+		h5 {
+			font-size: 16px;
+		}
+		.title {
+			font-size: 32px;
+		}
+	}
+	.section-text {
+		p {
+			font-size: 16px;
+		}
+	}
+}
